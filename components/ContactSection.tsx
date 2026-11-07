@@ -74,14 +74,14 @@ export default function ContactSection({
                 onClick={onCopyEmail}
                 className="w-full py-2.5 px-3 rounded-lg bg-slate-800/80 hover:bg-slate-800 text-xs font-mono text-slate-200 flex items-center justify-between border border-slate-700/60 transition-colors"
               >
-                <span className="truncate">ahadsaleem123321@gmail.com</span>
+                <span className="truncate">ahadsaleemt124@gmail.com</span>
                 <span className="text-[10px] text-[#FF5A1F] font-bold ml-2 shrink-0">
                   {copiedEmail ? 'Copied!' : 'Copy'}
                 </span>
               </button>
 
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/abdul-ahad-saleem-41162922b/"
                 target="_blank"
                 rel="noreferrer"
                 className="w-full py-2.5 px-3 rounded-lg bg-slate-800/80 hover:bg-slate-800 text-xs font-medium text-slate-200 flex items-center justify-between border border-slate-700/60 transition-colors"
@@ -94,7 +94,7 @@ export default function ContactSection({
               </a>
 
               <a
-                href="https://github.com"
+                href="https://github.com/Rao-Abdul-Ahad-Saleem"
                 target="_blank"
                 rel="noreferrer"
                 className="w-full py-2.5 px-3 rounded-lg bg-slate-800/80 hover:bg-slate-800 text-xs font-medium text-slate-200 flex items-center justify-between border border-slate-700/60 transition-colors"

@@ -67,8 +67,8 @@ export default function HeroSection() {
         </div>
         <div className="p-3.5 rounded-lg bg-slate-900/40 border border-slate-800">
           <div className="text-xs font-mono text-slate-400">Target Focus</div>
-          <div className="text-base font-bold text-white mt-1">Master Programs</div>
-          <div className="text-xs text-emerald-400 font-mono">France Études 2027</div>
+          <div className="text-base font-bold text-white mt-1">Graduate Studies</div>
+          <div className="text-xs text-emerald-400 font-mono">Digital Innovation &amp; Tech Systems • Fall 2027</div>
         </div>
       </div>
     </section>

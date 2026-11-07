@@ -36,14 +36,14 @@ export default function NavigationBar({ copiedEmail, onCopyEmail }: NavigationBa
         </nav>
 
         <div className="flex items-center gap-2.5">
-          <button
+          {/* <button
             onClick={onCopyEmail}
             className="text-xs font-mono px-3 py-1.5 rounded-md border border-slate-700 bg-slate-900/60 hover:border-slate-500 text-slate-300 flex items-center gap-1.5 transition-all active:scale-95"
             title="Copy Email Address"
           >
             <Mail className="w-3.5 h-3.5 text-[#FF5A1F]" />
             <span className="hidden sm:inline">{copiedEmail ? 'Copied to Clipboard!' : 'Copy Email'}</span>
-          </button>
+          </button> */}
           <a
             href="#contact"
             className="text-xs font-semibold px-3.5 py-1.5 rounded-md bg-[#FF5A1F] hover:bg-[#ff6c37] text-white shadow-sm shadow-orange-500/20 transition-all active:scale-95"

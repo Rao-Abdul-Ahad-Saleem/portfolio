@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2">
           <div className="w-2 h-2 rounded-full bg-emerald-400"></div>
-          <span>Designed with Next.js architecture • Built for French Academic Dossier Evaluation</span>
+          <span>Designed with Next.js architecture • Prepared for Graduate Studies Candidacy Review</span>
         </div>
         <div>
           © 2026-2027 Abdul Ahad Saleem. All rights reserved.

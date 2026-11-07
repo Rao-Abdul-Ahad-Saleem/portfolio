@@ -43,74 +43,97 @@ export const PROJECTS_DATA: Project[] = [
   },
   {
     id: 'shah-alam-arbitrage',
-    title: 'Shah Alam Wholesale Arbitrage',
-    badge: 'Direct-to-Consumer Commerce Pilot',
+    title: 'Shah Alam Wholesale Arbitrage & Unit Economics Post-Mortem',
+    badge: 'E-Commerce Pilot',
     category: 'E-Commerce Experimentation',
-    timeline: 'Independent Market Pilot',
-    heroSummary: 'High-margin consumer electronics pilot bridging the geographic commute barrier between Lahore’s physical wholesale hub (Shah Alam Market) and remote regional consumers.',
+    timeline: 'Direct-to-Consumer Arbitrage',
+    heroSummary: 'Direct-to-consumer commerce pilot bridging Lahore’s wholesale hubs with remote buyers, testing conversational conversion pipelines and diagnosing suburban last-mile Cash-on-Delivery (COD) failure points.',
     metrics: [
-      { label: 'Gross Margin', val: '38% Net' },
-      { label: 'Fulfillment Time', val: '< 24 Hours' },
-      { label: 'Return Rate', val: '< 2.4%' }
+      { label: 'Gross Margin', val: '38%' },
+      { label: 'Daily Volume', val: '6–8 Orders' },
+      { label: 'Return Rate (RTO)', val: '~50%' }
     ],
-    businessProblem: 'Shah Alam Market in Lahore offers top-tier wholesale pricing on consumer electronics (AirPods, audio peripherals), but consumers outside central Lahore or in suburban cities face 2-3 hour grueling commutes, chaotic wholesale haggling, and zero return guarantees.',
-    solutionStrategy: 'Built a lightweight direct-to-consumer digital acquisition channel with validated unit economics. By establishing physical wholesale sourcing ties and pairing them with digital quality verification, regional buyers received doorstep delivery at 30% below retail store prices.',
+    businessProblem: 'Wholesale markets like Shah Alam offer deep pricing advantages that non-metropolitan buyers cannot access due to commute constraints. However, serving suburban Pakistan via Cash-on-Delivery (COD) creates severe operational risk: intermittent mobile cellular coverage prevents couriers from confirming locations, while fulfillment transit delays trigger buyer cancellation and doorstep refusals.',
+    solutionStrategy: 'Engineered a rapid conversational acquisition pipeline via targeted Meta Ads funneled straight into WhatsApp Business for real-time customer qualification, objection handling, and address collection. Sourced inventory just-in-time from Shah Alam wholesale suppliers to preserve a 38% gross product margin without tying up upfront capital in bulk warehousing.',
     techHighlights: [
-      'Conducted iterative landing page split tests (A/B testing price elasticity and cash-on-delivery vs prepaid trust factors).',
-      'Engineered an automated WhatsApp Business API order confirmation pipeline with direct GPS pin verification for courier handoff.',
-      'Designed real-time inventory ledger tracking batch serials and local supplier warranty windows to eliminate dead-stock risk.',
-      'Formulated customer acquisition cost (CAC) vs Lifetime Value (LTV) unit-economic model resulting in profitable 1st-order conversions.'
+      'Campaign & Pipeline Design: Deployed targeted Meta ad sets optimized for conversational click-to-WhatsApp conversions, capturing verified purchase intent without the friction of a multi-step web checkout.',
+      'Logistics Routing Infrastructure: Integrated multi-courier dispatch using PostEx for suburban Cash-on-Delivery collections alongside Pakistan Post for peripheral regional shipping coverage.',
+      'Forensic Post-Mortem Analysis: Diagnosed how high gross margin (38%) was completely absorbed by reverse logistics costs on a ~50% return rate caused by courier routing latencies and rural telecommunication blackouts.',
+      'Venture Architecture Insight: Demonstrated why consumer acquisition is ineffective without real-time pre-dispatch confirmation algorithms and deep courier API reconciliation—driving my focus toward autonomous verification systems.'
     ],
-    stack: ['Direct E-Commerce', 'Unit Economics', 'Digital Acquisition', 'Supply Chain Routing', 'WhatsApp API', 'Customer Analytics'],
+    stack: [
+      'Meta Ads Manager',
+      'WhatsApp Business API',
+      'PostEx Logistics',
+      'Pakistan Post',
+      'COD Unit Economics Modeling',
+      'Reverse Logistics (RTO) Auditing'
+    ],
     liveUrl: '#',
     repoUrl: 'https://github.com'
   },
   {
     id: 'speak-silq',
-    title: 'SpeakSilq Interactive Learning',
-    badge: 'EdTech & Digital Platform',
-    category: 'SaaS Product Architecture',
-    timeline: 'Production Engineering Role',
-    heroSummary: 'Interactive speech and language mastery platform engineered with dynamic audio streaming, modular curriculum states, and real-time pronunciation scoring.',
+    title: 'SpeakSilq: AI-Driven Heritage Language Web Platform',
+    badge: 'Production Digital Product',
+    category: 'EdTech Web Platform',
+    timeline: 'Client Project • Engineering Team Member',
+    heroSummary: 'Responsive web platform supporting 28+ regional and heritage languages, featuring an AI-assisted curriculum replication pipeline, interactive study flashcards, and automated quiz evaluation engines.',
     metrics: [
-      { label: 'Latency', val: '< 180ms Audio Render' },
-      { label: 'State Sync', val: 'Redux Toolkit' },
-      { label: 'Accessibility', val: 'WCAG 2.1 AA' }
+      { label: 'Catalog Depth', val: '28+ Languages' },
+      { label: 'Lesson Design', val: '10–15 Min Bites' },
+      { label: 'Platform Scope', val: 'Responsive Web' }
     ],
-    businessProblem: 'Conventional language apps offer static quizzes that fail to simulate practical verbal confidence. Users drop off within 7 days due to rigid interfaces and disconnected progress tracking.',
-    solutionStrategy: 'Engineered an audio-first, conversational interface with micro-lesson modules, low-latency audio buffering, and instantaneous visual feedback loops that gamify pronunciation improvement.',
+    businessProblem: 'Mainstream language learning platforms consistently neglect regional, low-resource, and dialectal languages (Dari, Pashto, Punjabi, Kurdish, Sindhi), creating an unserved market of diaspora youth seeking connection to their roots. However, scaling human curriculum development across dozens of minor languages is prohibitively slow and expensive.',
+    solutionStrategy: 'Collaborated as a core engineering team member under the team manager on a client contract to architect and deploy the dedicated web platform. Leveraged AI-accelerated development workflows (including Replit Agent prototyping) and designed an automated course replication pipeline: translating and structuring foundational lesson modules programmatically to bootstrap complete curriculum tracks in new languages in hours rather than months.',
     techHighlights: [
-      'Developed modular interactive audio workout components using the Web Audio API with synchronized waveform visualization.',
-      'Implemented resilient optimistic UI updates with Redux Toolkit to prevent interaction lag during multi-step exercises.',
-      'Constructed RESTful session orchestration endpoints ensuring zero progress loss during network interruptions.',
-      'Built custom responsive styling and intuitive keyboard navigation for accessibility.'
+      'Automated Curriculum Pipeline: Engineered systemic logic to ingest existing validated course modules and utilize LLM transformations to programmatically duplicate entire language tracks, dramatically reducing time-to-market for 28+ regional dialects.',
+      'Pedagogical Interactive Flow: Built responsive web flashcard decks with state-managed review queues and synchronized MCQ placement tests to enforce active recall and gamified retention mechanics.',
+      'Full-Stack Web System: Developed frontend interfaces in React.js paired with Node.js and Express.js REST APIs, backed by a relational SQL schema configured for lesson hierarchies, user streaks, and progression tracking.',
+      'Post-Deployment Dialect Analysis: Evaluated live community feedback (including diaspora discussions on Reddit), identifying acoustic limitations where generic AI voice synthesis lacks localized regional nuance—formulating technical insights on phonetic fine-tuning.'
     ],
-    stack: ['React', 'Redux Toolkit', 'Node.js', 'Express', 'Web Audio API', 'Tailwind CSS', 'REST APIs'],
-    liveUrl: '#',
+    stack: [
+      'React.js',
+      'Node.js',
+      'Express.js',
+      'PostgreSQL / Relational SQL',
+      'Replit Agent (Workflow Acceleration)',
+      'LLM Curriculum Orchestration',
+      'Tailwind CSS'
+    ],
+    liveUrl: 'https://speaksilq.com',
     repoUrl: 'https://github.com'
   },
   {
-    id: 'mamas-medicine',
-    title: "Mama's Medicine Health-Tech",
-    badge: 'Healthcare Commerce Workflow',
-    category: 'Full-Stack Digital Product',
-    timeline: 'Client Product Engineering',
-    heroSummary: 'A dependable prescription medicine and wellness procurement platform engineered to demystify complex medical inventories for domestic caregivers.',
+    id: 'soul-sighted',
+    title: 'Soul Sighted: AI-Powered Relational Astrology Platform',
+    badge: 'Production Digital Product',
+    category: 'Headless Digital Architecture',
+    timeline: 'Client Migration • Engineering Team Member',
+    heroSummary: 'High-performance Next.js migration and AI integration for an astrology platform analyzing parent-child dynamics, replacing rigid Webflow limitations with custom dynamic frontend architecture and Xano backend APIs.',
     metrics: [
-      { label: 'Order Processing', val: 'Automated Triaging' },
-      { label: 'Data Security', val: 'Encrypted Records' },
-      { label: 'Mobile Conversion', val: '+44% uplift' }
+      { label: 'Architecture', val: 'Next.js + Xano' },
+      { label: 'AI Engine', val: 'Parent-Child Dynamics' },
+      { label: 'System Migration', val: 'No-Code → Modern Stack' }
     ],
-    businessProblem: 'Procuring recurring chronic prescriptions in developing markets is fraught with counterfeit stock risks, erratic pharmacy inventory, and confusing chemical-to-brand generic names.',
-    solutionStrategy: 'Engineered an intuitive mobile-first digital pharmacy workflow with smart generic search substitutes, prescription upload verification pipeline, and scheduled auto-refill triggers.',
+    businessProblem: 'The client initially prototyped the platform using Webflow connected to Xano. While functional for static presentation, Webflow created severe bottlenecks when attempting to deliver complex, multi-variable dynamic user interfaces, interactive astrological chart generation, and personalized computational reporting for clients.',
+    solutionStrategy: 'Collaborated directly under the engineering team manager on a client consulting engagement to rebuild the platform architecture. Migrated the entire presentation layer from Webflow to a custom, responsive Next.js frontend while retaining and optimizing Xano for scalable relational database records and REST endpoints. Developed and integrated a specialized external AI service to process complex birth data and generate personalized parent-child relational dynamic reports.',
     techHighlights: [
-      'Built a fault-tolerant multi-file prescription scanning and upload module with client-side image downscaling prior to secure S3 storage.',
-      'Implemented clean backend search indexing matching both salt compounds and consumer brand trade names.',
-      'Designed a secure checkout workflow complying with medication purchase compliance requirements and digital audit trails.',
-      'Created a responsive pharmacy dispatch dashboard with instant courier tracking hooks.'
+      'No-Code to Code Migration: Decoupled the monolithic Webflow frontend and re-architected it into a modular Next.js application, drastically improving dynamic rendering capabilities, load performance, and UI state responsiveness.',
+      'Headless Backend Orchestration: Integrated complex RESTful API workflows with Xano BaaS, managing authenticated user sessions, relational chart entries, and dynamic content feeds with structured JSON payloads.',
+      'Astrological AI Service Integration: Engineered the integration pipeline for an external AI computation service that evaluates astrological inputs and outputs nuanced, personalized relationship analyses for parenting dynamics.',
+      'Client Consultation & Problem Resolution: Resolved deep-seated CMS data-binding limitations by architecting a modern headless web system that gave the client full control over customized interactive user journeys.'
     ],
-    stack: ['MERN Stack', 'Express REST', 'JWT Auth', 'Multer/S3 Pipeline', 'Tailwind CSS', 'PostgreSQL / Mongo'],
-    liveUrl: '#',
+    stack: [
+      'Next.js',
+      'React.js',
+      'Xano (Backend & Database)',
+      'External AI Service Integration',
+      'RESTful API Orchestration',
+      'Tailwind CSS',
+      'Headless Architecture'
+    ],
+    liveUrl: 'https://soul-sighted.com',
     repoUrl: 'https://github.com'
   }
 ];
@@ -146,7 +169,7 @@ export const SKILLS_CATEGORIES = [
     items: [
       'Node.js & Express.js',
       'RESTful Microservices & Webhooks',
-      'PostgreSQL / Neon DB',
+      'PostgreSQL / Relational SQL',
       'MongoDB & Mongoose Schema Design',
       'Xano (No-Code/Low-Code Backend Logic)',
       'Prisma ORM & Connection Pooling'
