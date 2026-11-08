@@ -66,7 +66,7 @@ export default function ContactSection({
             <div className="space-y-1">
               <div className="text-xs font-mono text-slate-400">Direct Contact</div>
               <div className="text-sm font-semibold text-white">Abdul Ahad Saleem</div>
-              <div className="text-xs text-slate-400 font-mono">Lahore, Pakistan (Applying to France)</div>
+              <div className="text-xs text-slate-400 font-mono">Lahore, Graduate Applicant</div>
             </div>
 
             <div className="space-y-2 pt-2 border-t border-slate-800">
